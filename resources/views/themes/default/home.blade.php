@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Default Theme</title>
-</head>
-<body style="background-color: #f9fafb; color: #1a202c;">
+<x-app-layout>
+
     <h1 style="font-size: 2rem;">🟢 Default Theme</h1>
     <p>Active Theme: {{ $activeTheme }}</p>
 
@@ -15,5 +10,4 @@
             <option value="modern" {{ $activeTheme === 'modern' ? 'selected' : '' }}>Modern</option>
         </select>
     </form>
-</body>
-</html>
+</x-app-layout>

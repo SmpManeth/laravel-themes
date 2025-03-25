@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Modern Theme</title>
-</head>
-<body style="background: linear-gradient(to right, #ece9e6, #ffffff); color: #333;">
+<x-app-layout>
+
     <h1 style="font-size: 2rem;">🔵 Modern Theme</h1>
     <p>Active Theme: {{ $activeTheme }}</p>
 
@@ -15,5 +10,4 @@
             <option value="modern" {{ $activeTheme === 'modern' ? 'selected' : '' }}>Modern</option>
         </select>
     </form>
-</body>
-</html>
+</x-app-layout>

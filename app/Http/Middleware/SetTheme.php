@@ -12,9 +12,9 @@ class SetTheme
 {
     public function handle(Request $request, Closure $next): mixed
     {
-        $theme = session('theme', 'modern');
+        $theme = session('theme', 'default');
         Log::info("Active theme from middleware: $theme");
-        app('view')->share('activeTheme', $theme);
+        view()->share('activeTheme', $theme);
         return $next($request);
     }
 }
